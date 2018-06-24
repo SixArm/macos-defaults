@@ -30,3 +30,11 @@ To download the script and run it:
 
     curl https://raw.githubusercontent.com/SixArm/mac-defaults/master/mac-defaults | bash
 
+
+## Thanks
+
+  * mathias bynens
+  * https://github.com/stianeikeland/dotfiles/edit/master/bin/sanemacdefaults.sh
+  * https://github.com/mathiasbynens/dotfiles
+  * https://www.taniarascia.com/setting-up-a-brand-new-mac-for-development/
+
