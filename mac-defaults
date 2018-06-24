@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # Demo file that shows how to script `defaults write`
 # to set many system preferences and application settings.
 #
