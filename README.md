@@ -33,8 +33,7 @@ To download the script and run it:
 
 ## Thanks
 
-  * mathias bynens
-  * https://github.com/stianeikeland/dotfiles/edit/master/bin/sanemacdefaults.sh
   * https://github.com/mathiasbynens/dotfiles
+  * https://github.com/stianeikeland/dotfiles/edit/master/bin/sanemacdefaults.sh
   * https://www.taniarascia.com/setting-up-a-brand-new-mac-for-development/
 
