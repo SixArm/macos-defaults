@@ -22,3 +22,11 @@ For example:
 These preferences are our team's preferences for our professional software developers.
 
 You may prefer to edit this script to set your own personal preferences.
+
+
+## Usage
+
+To download the script and run it:
+
+    curl https://raw.githubusercontent.com/SixArm/mac-defaults/master/mac-defaults | bash
+
