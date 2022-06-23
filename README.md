@@ -1,17 +1,17 @@
 <!--
-  * browser: mac-defaults
+  * browser: macos-defaults
   * tracker: 53234c0656a865384b1e2afb715aec91
-  * version: 3.0.0
-  * updated: 2018-06-24T18:15:33Z
+  * version: 4.0.0
+  * updated: 2022-06-23T00:00:00Z
   * contact: Joel Parker Henderson (http://joelparkerhenderson.com)
   * options: commentable
 -->
 
-# mac-defaults setup configuration script
+# macos-defaults setup configuration script
 
-<img src="README.jpg" alt="mac-defaults" style="width: 100%;"/>
+<img src="README.jpg" alt="macos-defaults" style="width: 100%;"/>
 
-mac-defaults setup configuration script sets Apple macOS system software preferences.
+The `macos-defaults` script configures Apple macOS system software preferences, by using the macOS command `defaults`.
 
 For example: 
 
@@ -28,7 +28,7 @@ You may prefer to edit this script to set your own personal preferences.
 
 To download the script and run it:
 
-    curl https://raw.githubusercontent.com/SixArm/mac-defaults/master/mac-defaults | bash
+    curl https://raw.githubusercontent.com/SixArm/mac-defaults/master/macos-defaults | zsh
 
 
 ## Thanks
