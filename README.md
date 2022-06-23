@@ -28,7 +28,7 @@ You may prefer to edit this script to set your own personal preferences.
 
 To download the script and run it:
 
-    curl https://raw.githubusercontent.com/SixArm/mac-defaults/master/macos-defaults | zsh
+    curl https://raw.githubusercontent.com/SixArm/macos-defaults/master/macos-defaults | zsh
 
 
 ## Thanks
