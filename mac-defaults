@@ -1,12 +1,16 @@
 #!/bin/sh
 
-# Demo file that shows how to script `defaults write`
+# Demo script that shows how to script macOS `defaults` command
 # to set many system preferences and application settings.
+#
+# This script is intended to work on macOS Monterey 
+# running on the Apple M1 chip.
 #
 # These are gathered from many different sources.
 #
 # Thanks:
 #
+#   * https://macos-defaults.com
 #   * https://github.com/mathiasbynens/dotfiles
 #   * https://github.com/stianeikeland/dotfiles/edit/master/bin/sanemacdefaults.sh
 #   * https://www.taniarascia.com/setting-up-a-brand-new-mac-for-development/
@@ -67,6 +71,9 @@ defaults write com.apple.finder QLEnableTextSelection -bool true
 
 
 ## Dock
+
+# Move Dock to the left side of the screen
+defaults write com.apple.dock "orientation" -string "left" && killall Dock
 
 # Make Dock icons of hidden applications translucent.
 defaults write com.apple.dock showhidden -bool true
