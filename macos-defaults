@@ -101,15 +101,6 @@ defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 
 
-## iTunes
-
-# Disable the Ping sidebar in iTunes.
-defaults write com.apple.iTunes disablePingSidebar -bool true
-
-# Disable all the other Ping stuff in iTunes.
-defaults write com.apple.iTunes disablePing -bool tr
-
-
 ## Safari
 
 # Enable Safari’s debug menu.
