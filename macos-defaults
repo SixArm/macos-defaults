@@ -172,11 +172,13 @@ defaults write com.apple.Safari AutoOpenSafeDownloads -bool false
 # Disable snapshots i.e. don't use thumbnail cache for History and Top Sites
 defaults write com.apple.Safari DebugSnapshotsUpdatePolicy -int 2
 
-# Disable AutoFill
-defaults write com.apple.Safari AutoFillFromAddressBook -bool false
-defaults write com.apple.Safari AutoFillPasswords -bool false
-defaults write com.apple.Safari AutoFillCreditCardData -bool false
-defaults write com.apple.Safari AutoFillMiscellaneousForms -bool false
+# Enable AutoFill
+defaults write com.apple.Safari AutoFillFromAddressBook -bool true
+defaults write com.apple.Safari AutoFillPasswords -bool true
+defaults write com.apple.Safari AutoFillCreditCardData -bool true
+defaults write com.apple.Safari AutoFillMiscellaneousForms -bool true
+
+
 ## Network Browser
 
 # Use AirDrop over every interface.
