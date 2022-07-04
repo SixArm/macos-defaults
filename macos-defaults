@@ -231,6 +231,12 @@ sudo defaults write com.apple.AppleMultitouchTrackpad Clicking 1
 chflags nohidden ~/Library
 
 
+## Login window
+
+# Show host info e.g. IP address, hostname, OS version, etc. when you click the clock
+# sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
+
+
 ## Finally
 
 # Kill affected applications.
