@@ -15,7 +15,6 @@
 #   * https://github.com/stianeikeland/dotfiles/edit/master/bin/sanemacdefaults.sh
 #   * https://www.taniarascia.com/setting-up-a-brand-new-mac-for-development/
 
-
 ## NSGlobalDomain
 
 # Show all filename extensions.
@@ -41,8 +40,20 @@ defaults write NSGlobalDomain KeyRepeat -int 0
 # Save to disk (not to iCloud) by default.
 defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
 
-# Disable automatic full stop substition with double space
+# Disable typing automatic capitalization
+defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
+
+# Disable typingautomatic period substition a.k.a. "smart stops"
 defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -int 0
+
+# Disable typing automatic dash substitution e.g. "smart dashes"
+defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
+
+# Disable typing automatic quote substitution a.k.a. "smart quotes"
+defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
+
+# Disable typing automatic spelling correction a.k.a. "auto-correct"
+defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
 # Expand save panel by default.
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
