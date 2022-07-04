@@ -42,6 +42,8 @@ defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 # Set a blazingly fast keyboard repeat rate.
 defaults write NSGlobalDomain KeyRepeat -int 0
 
+# Disable automatic period substition such as when you type a double space
+defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -int 0
 
 ## Finder
 
