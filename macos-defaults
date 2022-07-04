@@ -18,14 +18,8 @@
 
 ## NSGlobalDomain
 
-# Save to disk (not to iCloud) by default.
-defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
-
 # Show all filename extensions.
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
-
-# Expand save panel by default.
-defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 
 # Enable subpixel font rendering on non-Apple LCDs.
 defaults write NSGlobalDomain AppleFontSmoothing -int 2
@@ -42,8 +36,19 @@ defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 # Set a blazingly fast keyboard repeat rate.
 defaults write NSGlobalDomain KeyRepeat -int 0
 
-# Disable automatic period substition such as when you type a double space
+## NSGlobalDomain NS*
+
+# Save to disk (not to iCloud) by default.
+defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
+
+# Disable automatic full stop substition with double space
 defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -int 0
+
+# Expand save panel by default.
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
+
+# Speed up window resize time
+defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
 
 ## Finder
 
