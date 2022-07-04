@@ -11,6 +11,7 @@
 # Thanks:
 #
 #   * https://macos-defaults.com
+#   * https://github.com/paulmillr/dotfiles
 #   * https://github.com/mathiasbynens/dotfiles
 #   * https://github.com/stianeikeland/dotfiles/edit/master/bin/sanemacdefaults.sh
 #   * https://www.taniarascia.com/setting-up-a-brand-new-mac-for-development/
@@ -130,10 +131,35 @@ defaults write com.apple.screensaver askForPasswordDelay -int 0
 
 ## Safari
 
-# Enable Safari’s debug menu.
+# Include the Develop menu
+defaults write com.apple.Safari IncludeDevelopMenu -bool true
+
+# Include the Internal Debug menu.
 defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
 
+# Enable WebKit Developer Extras preference key
+defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
 
+# Enable WebKit Developer Extras
+defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled -bool true
+
+# Disable universal search because we prefer privacy
+defaults write com.apple.Safari UniversalSearchEnabled -bool false
+
+# Suppress search suggestions because we prefer privacy
+defaults write com.apple.Safari SuppressSearchSuggestions -bool true
+
+# Don't open "safe" downloads i.e. don't open files automatically after downloading
+defaults write com.apple.Safari AutoOpenSafeDownloads -bool false
+
+# Disable snapshots i.e. don't use thumbnail cache for History and Top Sites
+defaults write com.apple.Safari DebugSnapshotsUpdatePolicy -int 2
+
+# Disable AutoFill
+defaults write com.apple.Safari AutoFillFromAddressBook -bool false
+defaults write com.apple.Safari AutoFillPasswords -bool false
+defaults write com.apple.Safari AutoFillCreditCardData -bool false
+defaults write com.apple.Safari AutoFillMiscellaneousForms -bool false
 ## Network Browser
 
 # Use AirDrop over every interface.
