@@ -199,12 +199,13 @@ defaults write org.n8gray.QLColorCode hlTheme pablo
 defaults write org.n8gray.QLColorCode font Monaco
 
 
-## Tap to click
+## Trackpad
 
 # Enable tap to click (Trackpad), also for login menu.
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+sudo defaults write com.apple.AppleMultitouchTrackpad Clicking 1
 
 
 ## Flags
