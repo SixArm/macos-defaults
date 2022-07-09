@@ -50,8 +50,11 @@ defaults write NSGlobalDomain com.apple.swipescrolldirection -bool true
 # Disable press-and-hold for keys in favor of key repeat.
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
-# Set a blazingly fast keyboard repeat rate.
-defaults write NSGlobalDomain KeyRepeat -int 0
+# Set a fast KeyRepeat rate. We prefer 1 (15ms). The default minimum is 2 (30ms). May require reboot.
+defaults write NSGlobalDomain KeyRepeat -int 1 
+
+# Set a fast initial key repeat. We prefer 4 (60ms). The default minimum is 15 (225ms). May require reboot.
+defaults write NSGlobalDomain InitialKeyRepeat -int 4
 
 ## NSGlobalDomain NS*
 
